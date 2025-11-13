@@ -269,15 +269,21 @@ nav a.active {
 
 .section2 {
   position: relative;
-  height: 100vh;
+  height: 160vh;
   width: 100%;
-  background: var(--or-psg);
-  background-image: url("../assets/image/le_message_alarmant_de_joao_neves_avant_la_rencontre_iconsport_1003090745.png");
   cursor: none;
-  overflow: hidden;
-  background-attachment: fixed;
 }
 
+.section2-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/image/le_message_alarmant_de_joao_neves_avant_la_rencontre_iconsport_1003090745.png");
+  background-size: cover;
+  z-index: 0;
+}
 #cercle {
   height: 50px;
   width: 50px;
@@ -290,11 +296,11 @@ nav a.active {
 
 .div-texte-section2 {
   position: absolute;
-  width: 80%;
+  width: 60%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10vh;
-  height: 80vh;
+  top: 56%;
+  height: auto;
   backdrop-filter: blur(20px);
   background-color: rgba(2, 33, 54, 0.6);
   border-radius: 20px;
